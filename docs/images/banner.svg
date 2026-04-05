@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f72585;stop-opacity:0"/>
+      <stop offset="15%" style="stop-color:#f72585"/>
+      <stop offset="85%" style="stop-color:#f72585"/>
+      <stop offset="100%" style="stop-color:#f72585;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="200" fill="url(#bg)" rx="12"/>
+  <rect x="50" y="165" width="700" height="3" fill="url(#accent)" rx="1.5"/>
+  <circle cx="60" cy="30" r="80" fill="#f72585" opacity="0.03"/>
+  <circle cx="740" cy="170" r="120" fill="#f72585" opacity="0.04"/>
+  <circle cx="400" cy="100" r="200" fill="#f72585" opacity="0.02"/>
+  <text x="400" y="75" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="42" font-weight="700" fill="white" filter="url(#glow)">💼 Cover Letter Generator</text>
+  <text x="400" y="115" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#f72585" font-weight="500">Craft Personalized, ATS-Optimized Cover Letters with AI Skill Matching</text>
+  <text x="400" y="148" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#8892b0">Part of the 90 Local LLM Projects Series • Powered by Ollama</text>
+</svg>

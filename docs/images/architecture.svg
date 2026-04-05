@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="archbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#8892b0"/>
+    </marker>
+  </defs>
+  <rect width="800" height="400" fill="url(#archbg)" rx="12"/>
+  <text x="400" y="30" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#f72585">System Architecture</text>
+  <g transform="translate(0,20)">
+  <path d="M170,90 C195.0,90 195.0,90 220,90" fill="none" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+  <path d="M170,200 C195.0,200 195.0,230 220,230" fill="none" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+  <path d="M380,95 C405.0,95 405.0,160 430,160" fill="none" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+  <path d="M380,235 C405.0,235 405.0,190 430,190" fill="none" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+  <path d="M600,175 C625.0,175 625.0,70 650,70" fill="none" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+  <path d="M600,175 C625.0,175 625.0,190 650,190" fill="none" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+  <path d="M600,175 C625.0,175 625.0,310 650,310" fill="none" stroke="#8892b0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowhead)"/>
+
+  <rect x="40" y="60" width="130" height="60" rx="8" fill="#f72585" opacity="0.15" stroke="#f72585" stroke-width="1.5"/>
+  <text x="105" y="84" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#f72585">Resume</text>
+  <text x="105" y="100" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#8892b0">(.txt file)</text>
+  <rect x="40" y="170" width="130" height="60" rx="8" fill="#b5179e" opacity="0.15" stroke="#b5179e" stroke-width="1.5"/>
+  <text x="105" y="194" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#b5179e">Job Description</text>
+  <text x="105" y="210" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#8892b0">(.txt file)</text>
+  <rect x="220" y="60" width="160" height="70" rx="8" fill="#7209b7" opacity="0.15" stroke="#7209b7" stroke-width="1.5"/>
+  <text x="300" y="89" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#7209b7">Skill Matching</text>
+  <text x="300" y="105" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#8892b0">match_skills()</text>
+  <rect x="220" y="200" width="160" height="70" rx="8" fill="#ffd166" opacity="0.15" stroke="#ffd166" stroke-width="1.5"/>
+  <text x="300" y="229" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#ffd166">build_prompt()</text>
+  <text x="300" y="245" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#8892b0">Letter Engine</text>
+  <rect x="430" y="140" width="170" height="70" rx="8" fill="#ef476f" opacity="0.15" stroke="#ef476f" stroke-width="1.5"/>
+  <text x="515" y="169" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#ef476f">Ollama LLM</text>
+  <text x="515" y="185" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#8892b0">generate_cover_letter()</text>
+  <rect x="650" y="40" width="130" height="60" rx="8" fill="#f72585" opacity="0.15" stroke="#f72585" stroke-width="1.5"/>
+  <text x="715" y="64" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#f72585">Cover Letter</text>
+  <text x="715" y="80" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#8892b0">(Personalized)</text>
+  <rect x="650" y="160" width="130" height="60" rx="8" fill="#560bad" opacity="0.15" stroke="#560bad" stroke-width="1.5"/>
+  <text x="715" y="184" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#560bad">Skill Report</text>
+  <text x="715" y="200" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#8892b0">(Match Analysis)</text>
+  <rect x="650" y="280" width="130" height="60" rx="8" fill="#3a0ca3" opacity="0.15" stroke="#3a0ca3" stroke-width="1.5"/>
+  <text x="715" y="304" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#3a0ca3">Revisions</text>
+  <text x="715" y="320" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-size="9" fill="#8892b0">save_revision()</text>
+  </g>
+</svg>
