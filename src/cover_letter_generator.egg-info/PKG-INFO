@@ -1,0 +1,157 @@
+Metadata-Version: 2.4
+Name: cover-letter-generator
+Version: 1.0.0
+Summary: Generate personalized cover letters matching resume to job descriptions using a local LLM
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.31.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: click>=8.1.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: streamlit>=1.28.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+<div align="center">
+
+# ✉️ Cover Letter Generator
+
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Powered by Ollama](https://img.shields.io/badge/LLM-Ollama-green.svg)](https://ollama.ai/)
+
+**Generate personalized, AI-powered cover letters that match your resume to any job description.**
+
+[Features](#-features) • [Installation](#-installation) • [CLI Usage](#-cli-usage) • [Web UI](#-web-ui) • [Architecture](#-architecture)
+
+</div>
+
+---
+
+## 🌟 Features
+
+| Feature | Description |
+|---------|-------------|
+| 🎯 **Skill Matching Matrix** | Automatically matches resume skills to JD requirements with gap analysis |
+| 🎨 **4 Writing Tones** | Professional 👔, Enthusiastic 🔥, Confident 💪, Conversational 💬 |
+| 🔍 **Company Research Integration** | AI incorporates company context into personalized letters |
+| 📝 **Revision Tracking** | Save and browse revision history with versioning |
+| 📊 **Match Percentage** | See your skill match score before generating |
+| 📄 **File Upload Support** | Upload resume and JD as text files |
+| 💻 **Dual Interface** | Full CLI + Streamlit Web UI |
+| ⚙️ **YAML Configuration** | Flexible config management |
+
+## 🏗️ Architecture
+
+```
+40-cover-letter-generator/
+├── src/
+│   └── cover_letter_gen/
+│       ├── __init__.py          # Package metadata
+│       ├── core.py              # Business logic, skill matching, revisions
+│       ├── cli.py               # Click CLI with subcommands
+│       └── web_ui.py            # Streamlit web interface
+├── tests/
+│   ├── __init__.py
+│   ├── test_core.py             # Core logic tests
+│   └── test_cli.py              # CLI tests
+├── config.yaml                  # Configuration
+├── setup.py                     # Package setup
+├── Makefile                     # Build commands
+├── .env.example                 # Environment template
+├── requirements.txt             # Dependencies
+└── README.md                    # Documentation
+```
+
+## 📦 Installation
+
+```bash
+make install    # or: pip install -e .
+make dev        # with dev dependencies
+```
+
+## 🖥️ CLI Usage
+
+### Generate a Cover Letter
+
+```bash
+# Basic
+cover-letter-gen generate \
+  --resume resume.txt \
+  --job-description jd.txt \
+  --company "Google"
+
+# Full options
+cover-letter-gen generate \
+  --resume resume.txt \
+  --job-description jd.txt \
+  --company "Google" \
+  --tone confident \
+  --name "Jane Doe" \
+  --show-skills \
+  -o cover_letter.md
+```
+
+### Analyze Skill Match
+
+```bash
+cover-letter-gen skills --resume resume.txt --job-description jd.txt
+```
+
+### List Tones
+
+```bash
+cover-letter-gen tones
+```
+
+### Browse Revisions
+
+```bash
+cover-letter-gen revisions
+cover-letter-gen revisions --company Google
+```
+
+## 🌐 Web UI
+
+```bash
+make run-web
+```
+
+| Tab | Description |
+|-----|-------------|
+| 📄 **Resume & JD Upload** | Paste or upload resume and job description |
+| ✉️ **Generated Letter** | View and download the cover letter |
+| 🎯 **Skill Match** | Visual skill matching chart with categories |
+| 📝 **Revision History** | Browse saved versions |
+
+## ⚙️ Configuration
+
+```yaml
+llm:
+  temperature: 0.7
+  max_tokens: 2048
+cover_letter:
+  max_words: 400
+  default_tone: "professional"
+revision:
+  max_revisions: 5
+  revision_dir: "revisions"
+```
+
+## 🧪 Testing
+
+```bash
+make test
+```
+
+## 📄 License
+
+Part of the [90 Local LLM Projects](../../README.md) collection.

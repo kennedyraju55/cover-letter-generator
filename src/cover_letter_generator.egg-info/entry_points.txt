@@ -1,0 +1,2 @@
+[console_scripts]
+cover-letter-gen = cover_letter_gen.cli:main

@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/cover_letter_gen/__init__.py
+src/cover_letter_gen/cli.py
+src/cover_letter_gen/core.py
+src/cover_letter_gen/web_ui.py
+src/cover_letter_generator.egg-info/PKG-INFO
+src/cover_letter_generator.egg-info/SOURCES.txt
+src/cover_letter_generator.egg-info/dependency_links.txt
+src/cover_letter_generator.egg-info/entry_points.txt
+src/cover_letter_generator.egg-info/requires.txt
+src/cover_letter_generator.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_core.py
